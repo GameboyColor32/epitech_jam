@@ -16,6 +16,15 @@ THE HERO GUESSER
 usage="""
 USAGE
 \tpython3 main.py data/heroes.csv
+
+HOW DOES IT WORK
+\tTo add questions, just edit the questions.csv file with this syntax:
+\t\tquestion;comma_separated_list_of_heros,...
+\tIf there is a space in the name, put it between "
+\tBased on a yes or no question, the program will add or substract points from the heroes from the list of the quesion
+\tSo if I respond no to the question you gave me, the heroes from the list will lost points.
+\tOr you can just call:
+\t\tcore.register_question(Question("question", [list_of_heroes]))
 """
 
 class Question:
@@ -24,8 +33,8 @@ class Question:
         self.heroes = hero
 
 class Core:
-    def __init__(self, heroes: list[str]):
-        self._heroes: dict = {hero: 0 for hero in heroes}
+    def __init__(self):
+        self._heroes: dict = {}
         self.questions: list[Question] = []
 
     #@todo select only the first 25 questions parce que ça fait beaucoup la quand même
@@ -46,7 +55,11 @@ class Core:
     def load_questions(self, questons_file: str):
         for line in open(questons_file, "r").readlines():
             l = line.strip().split(";")
-            self.register_question(Question(l[0], [h.replace("\"", "") for h in l[1].split(",")]))
+            h = [h.replace("\"", "") for h in l[1].split(",")]
+            self.register_question(Question(l[0], h))
+            for hero in h:
+                if hero not in self._heroes:
+                    self._heroes[hero] = 0
 
     def register_question(self, question: Question):
         self.questions.append(question)
@@ -62,20 +75,12 @@ class Core:
         final.append("You are: {}".format(max(self._heroes, key=self._heroes.get)))
         return "\n".join(final)
 
-#@TODO load heros only from the questions file
 def main(ac: int, av: list[str]):
-    if ac < 1:
-        print(usage)
-        sys.exit(84)
-    if av[0] == "-h":
+    if ac == 1 and av[0] == "-h":
         print(usage)
         sys.exit(0)
-    with open(av[0], "r") as file:
-        reader = csv.reader(file, delimiter=";")
-        heroes: list = [item for sublist in reader for item in sublist]
-    core: Core = Core(heroes)
+    core: Core = Core()
     core.load_questions("data/questions.csv")
-    # core.register_question(Question("Do you like history?", ["Napoléon", "Hades", "Zeus", "\"Alexandre le Grand\""]))
     core.loop()
     print(core)
 

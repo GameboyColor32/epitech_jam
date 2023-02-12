@@ -1,12 +1,18 @@
-"Do you like technology?";"Iron Man"
+"Do you like technology?";"Iron Man","Green Lantern"
 "Are you ugly?";Hulk
-"Are you a patriot?";"Cpt America"
+"Are you a patriot?";"Captain America"
 "Should we have done the simulation instead of this stupid program?";Napoléon
-"Is green your favorite color?";Hulk
+"Is green your favorite color?";Hulk,"Green Lantern"
 "Do you like history?";Napoléon,Hades,Zeus,"Alexandre le Grand"
-"Do you like thunder?";Zeus
+"Do you like thunder?";Zeus,Thor
 "Do you like the greek gods?";Zeus,Hades
 "Are you a giga chad?";Napoléon,Hades,Zeus,"Alexandre le Grand"
 "Do you like bats?";Batman
 "Do you like dark movies?";Batman,Joker
 "Do you like vilains?";Joker
+"Do you prefer Marvel instead of DC comics";Hulk;"Captain America","Iron Man",Thor
+"Do you prefer DC comics instead of Marvel";Batman,Joker,"Green Lantern"
+"Have you an armor ?";"Iron Man","Captain America"
+"Are you the director of Epitech Brussels";François,François,François,François,François
+"Do you like stupid jokes ?";François
+"Are you from another plantet ?";Superman,Thor

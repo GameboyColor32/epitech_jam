@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/python3.10
 
 import csv
 import sys
@@ -41,8 +41,12 @@ class Core:
     def loop(self):
         print(bat)
         random.shuffle(self.questions)
+        i = 10
 
         for question in self.questions:
+            if i == 0:
+                return
+            i -= 1
             print(question.question, end='')
             res = input(" (Y/n): ").lower().strip()
             if res != "y" and res != "n" and res != "":

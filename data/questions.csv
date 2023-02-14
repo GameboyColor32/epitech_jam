@@ -12,10 +12,15 @@
 "Do you like vilains?";Joker,François
 "Do you prefer Marvel instead of DC comics";Hulk;"Captain America","Iron Man",Thor
 "Do you prefer DC comics instead of Marvel";Batman,Joker,"Green Lantern"
-"Have you an armor ?";"Iron Man","Captain America"
+"Have you an armor?";"Iron Man","Captain America"
 "Are you the director of Epitech Brussels";François,François,François,François,François
 "Do you like stupid jokes ?";François
 "Are you from another plantet ?";Superman,Thor
 "Do you sometimes team up?";"Iron Man","Green Lantern",Thor,Batman
 "Are you faithful to your wife?";"Green Lantern","Captain America",Hades,François,Superman
 "Do you prefer beaches to cold places?";"Iron Man","Green Lantern",Hulk,Napoléon,Batman,François
+"Have you a weapon?";"Green Lantern",Zeus,"Alexandre le Grand",Batman,Thor
+"Do you usually fight with your fists?";Hulk,Superman,Batman
+"Are you rich?";Batman,"Iron Man",Hades,François
+"Do you speak French from birth?";François,Napoléon
+"Do you have a good sense of humour?";François,Joker,"Iron Man","Captain America"

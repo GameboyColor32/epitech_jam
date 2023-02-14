@@ -13,7 +13,7 @@
 "Do you prefer Marvel instead of DC comics";Hulk;"Captain America","Iron Man",Thor
 "Do you prefer DC comics instead of Marvel";Batman,Joker,"Green Lantern"
 "Have you an armor?";"Iron Man","Captain America"
-"Are you the director of Epitech Brussels";François,François,François,François,François
+"Are you the director of Epitech Brussels";François,François,François,François,François,François,François,François,François
 "Do you like stupid jokes ?";François
 "Are you from another plantet ?";Superman,Thor
 "Do you sometimes team up?";"Iron Man","Green Lantern",Thor,Batman
@@ -24,3 +24,4 @@
 "Are you rich?";Batman,"Iron Man",Hades,François
 "Do you speak French from birth?";François,Napoléon
 "Do you have a good sense of humour?";François,Joker,"Iron Man","Captain America"
+"Are you Batman?";Batman,Batman,Batman,Batman,Batman,Batman,Batman,Batman,Batman,Batman,Batman,Batman,Batman,Batman,Batman,Batman,Batman
